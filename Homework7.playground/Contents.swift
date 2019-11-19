@@ -21,10 +21,11 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 // be able to reuse this struct in Project Three.
 
 struct Book: Codable {
+    var id: Int?
     var title: String
     var author: String
-    var pubYear: String
-    var coverURL: String
+    var published: String
+    var imageURLString: String
 }
 
 // MARK: - STEP TWO
@@ -34,15 +35,15 @@ struct Book: Codable {
 // have an amusing dataset to work with, each student is requested to
 // create five different books for this database.
 
-let fellowship = Book(title: "The Fellowship of the Ring", author: "JRR Tolkien", pubYear: "29 July 1954", coverURL: "https://vignette.wikia.nocookie.net/lotr/images/6/64/The_Fellowship_of_the_Ring_1st_edition_cover.jpg/revision/latest?cb=20190917135720")
+let fellowship = Book(title: "The Fellowship of the Ring", author: "JRR Tolkien", published: "29 July 1954", imageURLString: "https://vignette.wikia.nocookie.net/lotr/images/6/64/The_Fellowship_of_the_Ring_1st_edition_cover.jpg/revision/latest?cb=20190917135720")
 
-let towers = Book(title: "The Two Towers", author: "JRR Tolkien", pubYear: "11 November 1054", coverURL: "https://vignette.wikia.nocookie.net/lotr/images/9/9b/The_Two_Towers_1st_edition_cover.jpg/revision/latest/scale-to-width-down/682?cb=20190917134803")
+let towers = Book(title: "The Two Towers", author: "JRR Tolkien", published: "11 November 1054", imageURLString: "https://vignette.wikia.nocookie.net/lotr/images/9/9b/The_Two_Towers_1st_edition_cover.jpg/revision/latest/scale-to-width-down/682?cb=20190917134803")
 
-let king = Book(title: "The Return of the King", author: "JRR Tolkien", pubYear: "20 November 1955", coverURL: "https://vignette.wikia.nocookie.net/lotr/images/0/03/The_Return_of_the_King_1st_edition_cover.jpg/revision/latest?cb=20190917140338")
+let king = Book(title: "The Return of the King", author: "JRR Tolkien", published: "20 November 1955", imageURLString: "https://vignette.wikia.nocookie.net/lotr/images/0/03/The_Return_of_the_King_1st_edition_cover.jpg/revision/latest?cb=20190917140338")
 
-let silmarillion = Book(title: "The Silmarillion", author: "JRR Tolkien", pubYear: "15 September 1977", coverURL: "https://vignette.wikia.nocookie.net/lotr/images/5/50/Silmarillion.jpg/revision/latest?cb=20180303011040")
+let silmarillion = Book(title: "The Silmarillion", author: "JRR Tolkien", published: "15 September 1977", imageURLString: "https://vignette.wikia.nocookie.net/lotr/images/5/50/Silmarillion.jpg/revision/latest?cb=20180303011040")
 
-let gondolin = Book(title: "The Fall of Gondolin", author: "JRR Tolkien", pubYear: "30 August 2018", coverURL: "https://vignette.wikia.nocookie.net/lotr/images/7/72/TheFallofGondolin.png/revision/latest/scale-to-width-down/664?cb=20180414125100")
+let gondolin = Book(title: "The Fall of Gondolin", author: "JRR Tolkien", published: "30 August 2018", imageURLString: "https://vignette.wikia.nocookie.net/lotr/images/7/72/TheFallofGondolin.png/revision/latest/scale-to-width-down/664?cb=20180414125100")
 
 let booklist = [fellowship, towers, king, silmarillion, gondolin]
 
