@@ -1,4 +1,7 @@
 import Foundation
+import PlaygroundSupport
+
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 // For this homework project, we'll be connecting to the "TLDR" server
 // to add a few books. The first thing you need to do is create an object
